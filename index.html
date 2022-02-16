@@ -22,19 +22,35 @@
     </div>
 
     <nav>
-      <ul class="nav__list--sp">
-        <li class="nav__list__item--sp"><a href="">ホーム</a></li>
-        <li class="nav__list__item--sp"><a href="">事業内容</a></li>
-        <li class="nav__list__item--sp"><a href="">ニュース</a></li>
-        <li class="nav__list__item--sp"><a href="">社員ブログ</a></li>
-        <li class="nav__list__item--sp"><a href="">会社概要</a></li>
-        <li class="nav__list__item--sp"><a href="">採用情報</a></li>
-        <li class="nav__list__item--sp"><a href="">お問い合わせ</a></li>
+      <ul class="nav__list">
+        <li class="nav__list__item"><a href="index.html">ホーム</a></li>
+        <li class="nav__list__item"><a href="service.html">事業内容</a></li>
+        <li class="nav__list__item"><a href="news.html">ニュース</a></li>
+        <li class="nav__list__item"><a href="blog.html">社員ブログ</a></li>
+        <li class="nav__list__item"><a href="company.html">会社概要</a></li>
+        <li class="nav__list__item"><a href="recruit.html">採用情報</a></li>
+        <li class="nav__list__item"><a href="contact.html">お問い合わせ</a></li>
       </ul>
     </nav>
 
+    <nav class="nav" id="nav">
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="service.html">事業内容</a></li>
+        <li><a href="news.html">ニュース</a></li>
+        <li><a href="blog.html">社員ブログ</a></li>
+        <li><a href="company.html">会社概要</a></li>
+        <li><a href="recruit.html">採用情報</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <div class="menu" id="menu">
+      <span class="menu__line--top"></span>
+      <span class="menu__line--middle"></span>
+      <span class="menu__line--bottom"></span>
+    </div>
   </header>
-      
+
   <div class="catch__wrappar">
 
     <div class="catch__top">
@@ -89,13 +105,13 @@
         </li>
       </ul>
 
-      <a href="" class="service__button">サービス一覧をみる</a>
+      <a href="service.html" class="service__button btn">サービス一覧をみる</a>
     </section>
   
     <section class="news__wrappar">
       <div class="news__flex">
         <h2 class="news__ttl">ニュース</h2>
-        <a href="" class="news__button">ニュース一覧をみる</a>
+        <a href="news.html" class="news__button btn">ニュース一覧をみる</a>
       </div>
       
       <ul class="news__list">
@@ -126,49 +142,58 @@
       <h2 class="blog__ttl">社員ブログ</h2>
 
       <ul class="blogs__list">
-        <li class="blog__item">
+        <li class="blog__item"><a href="">
           <div class="blog__img">
             <img src="img/blog.png" alt="">
           </div>
           <p class="blog__date">2019/07/17</p>
           <h3 class="blog__item__ttl">会社を創業した理由</h3>
+        </a>
         </li>
 
-        <li class="blog__item">
+        <li class="blog__item"><a href="">
           <div class="blog__img">
             <img src="img/blog.png" alt="">
           </div>
           <p class="blog__date">2019/11/11</p>
           <h3 class="blog__item__ttl">ITエンジニアを育成する最強メソッド</h3>
+        </a>
         </li>
 
-        <li class="blog__item">
+        <li class="blog__item"><a href="">
           <div class="blog__img">
             <img src="img/blog.png" alt="">
           </div>
           <p class="blog__date">2020/08/01</p>
           <h3 class="blog__item__ttl">コーチングによるモチベーション向上理論</h3>
+        </a>
         </li>
       </ul>
 
-      <a href="" class="blog__button">
+      <a href="blog.html" class="blog__button btn">
         社員ブログ一覧をみる
       </a>
     </section>
 
     <section class="recruit__wrappar">
-      <div class="recruit-red">
-        <h2 class="recruit__ttl">会社概要</h2>
-      </div>
-      <div class="recruit-black">
-        <h2 class="recruit__ttl">採用情報</h2>
-      </div>
+      <a href="company.html" class="recruit-red">
+        <div>
+          <h2 class="recruit__ttl">会社概要</h2>
+        </div>
+      </a>
+
+      <a href="recruit.html" class="recruit-black">
+        <div>
+          <h2 class="recruit__ttl">採用情報</h2>
+        </div>
+      </a>
+      
     </section>
 
     <section class="contact__wrappar">
       <h2 class="contact__ttl">お問い合わせ</h2>
       <p class="contact__text">お仕事のご依頼や採用に関してはお問合せにて承っております。</p>
-      <a href="" class="contact__button">お問い合わせ</a>
+      <a href="contact.html" class="contact__button btn">お問い合わせ</a>
     </section>
   </main>
 
@@ -178,13 +203,13 @@
     </small>
 
     <ul class="footer__nav">
-      <li class="footer__nav__item"><a href="">ホーム</a></li>
-      <li class="footer__nav__item"><a href="">事業内容</a></li>
-      <li class="footer__nav__item"><a href="">ニュース</a></li>
-      <li class="footer__nav__item"><a href="">社員ブログ</a></li>
-      <li class="footer__nav__item"><a href="">会社概要</a></li>
-      <li class="footer__nav__item"><a href="">採用情報</a></li>
-      <li class="footer__nav__item"><a href="">お問い合わせ</a></li>
+      <li class="footer__nav__item"><a href="index.html">ホーム</a></li>
+      <li class="footer__nav__item"><a href="service.html">事業内容</a></li>
+      <li class="footer__nav__item"><a href="news.html">ニュース</a></li>
+      <li class="footer__nav__item"><a href="blog.html">社員ブログ</a></li>
+      <li class="footer__nav__item"><a href="company.html">会社概要</a></li>
+      <li class="footer__nav__item"><a href="recruit.html">採用情報</a></li>
+      <li class="footer__nav__item"><a href="contact.html">お問い合わせ</a></li>
     </ul>
   </footer>
 

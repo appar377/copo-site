@@ -1,0 +1,289 @@
+.top__header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 25px;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.header__img {
+  width: 70px;
+}
+
+.header__img img {
+  width: 100%;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__list__item:not(last-of-type) {
+  margin-right: 35px;
+}
+
+.nav__list__item {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.nav__list__item a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* - - ここからナビゲーションドロワー - - -　*/
+
+a{
+  text-decoration: none;
+  color: blue
+}
+.nav{
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  left: -100%;
+  background: #eee;
+  transition: .7s;
+  text-align: center;
+}
+.nav ul{
+  padding-top: 80px;
+}
+.nav ul li{
+  list-style-type: none;
+  margin-top: 50px;
+}
+
+.nav ul li:hover {
+  opacity: .6;
+  transition: .2;
+}
+
+.menu {
+  display: none;
+  width: 36px;
+  height: 32px;
+  cursor: pointer;
+  position: relative;
+  left: 50%;
+  top: 20px;
+  z-index: 2;
+  margin-bottom: 35px;
+}
+.menu__line--top,
+.menu__line--middle,
+.menu__line--bottom {
+  display: inline-block;
+  width: 100%;
+  height: 4px;
+  background-color: #000;
+  position: absolute;
+  transition: 0.5s;
+}
+.menu__line--top {
+  top: 0;
+}
+.menu__line--middle {
+  top: 14px;
+}
+.menu__line--bottom {
+  bottom: 0;
+}
+.menu.open span:nth-of-type(1) {
+  top: 14px;
+  transform: rotate(45deg);
+}
+.menu.open span:nth-of-type(2) {
+  opacity: 0;
+}
+.menu.open span:nth-of-type(3) {
+  top: 14px;
+  transform: rotate(-45deg);
+}
+.in{
+  transform: translateX(100%);
+}
+
+/* - - ここまでナビゲーションドロワー - - - */
+
+.blog__wrappar {
+  margin: 50px;
+}
+
+.blog__ttl {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.blogs__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.blog__item {
+  width: 30%;
+  margin-bottom: 20px;
+}
+.blog__item:hover {
+  opacity: .6;
+  transition: .2s;
+}
+
+.blog__item a {
+  text-decoration: none;
+  color: #000;
+}
+
+.blog__item:not(last-of-type) {
+  margin-right: 20px;
+}
+
+.blog__img {
+  width: 100%;
+}
+
+.blog__img img {
+  width: 100%;
+}
+
+.blog__date {
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+.blog__item__ttl {
+  font-size: 18px;
+}
+
+
+
+.catch__wrappar {
+  height: 45vh;
+  background: url(../img/mv.png) no-repeat center / cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.catch__ttl {
+  color: #fff;
+  font-size: 30px;
+}
+
+
+.btn:hover {
+  opacity: 0.6;
+  transition: .2s;
+}
+
+.contact__wrappar {
+  background-color: #eee;
+  padding: 80px 0;
+  margin-top: 70px;
+}
+
+.contact__ttl {
+  text-align: center;
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+
+.contact__text {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.contact__button {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  background-color: red;
+  width: 240px;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copy {
+  font-size: 13px;
+}
+
+.footer__nav {
+  list-style: none;
+  display: flex;
+}
+
+.footer__nav__item {
+  padding: 0 13px;
+  font-size: 13px;
+}
+
+.footer__nav__item:hover {
+  opacity: 0.6;
+  transition: .2s;
+}
+
+.footer__nav__item:not(last-of-type) {
+  border-right: 1px solid #fff;
+}
+
+.footer__nav__item a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+@media  screen and (max-width: 768px) {
+  .nav__list {
+    display: none;
+  }
+  
+  .menu {
+    display: inline-block;
+  }
+
+  .blog__item {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+  .footer__nav {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+}
+
+.footer__nav__item {
+  padding: 8px 0;
+  font-size: 13px;
+  text-align: center;
+  border-right: none;
+}
+
+.footer__nav__item:not(last-of-type) {
+  border-right: none;
+}
+}
